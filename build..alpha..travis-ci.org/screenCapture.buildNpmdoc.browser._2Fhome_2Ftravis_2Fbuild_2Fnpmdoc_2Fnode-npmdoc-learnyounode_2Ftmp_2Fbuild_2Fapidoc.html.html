@@ -1,0 +1,1661 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/workshopper/learnyounode#readme">learnyounode (v3.5.10)</a>
+</h1>
+<h4>Learn You The Node.js For Much Win! An intro to Node.js via a set of self-guided workshops.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.learnyounode">module learnyounode</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.__">
+            function <span class="apidocSignatureSpan">learnyounode.</span>__
+            <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.__n">
+            function <span class="apidocSignatureSpan">learnyounode.</span>__n
+            <span class="apidocSignatureSpan">(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n">
+            function <span class="apidocSignatureSpan">learnyounode.</span>i18n
+            <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">learnyounode.</span>_eventsCount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>_events</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>_meta</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>appStorage</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>cli</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>domain</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>exercises</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>i18n.mustache</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>i18n.mustache.Context.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>i18n.mustache.Scanner.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>i18n.mustache.Writer.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>options</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.learnyounode.appStorage">module learnyounode.appStorage</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.appStorage.get">
+            function <span class="apidocSignatureSpan">learnyounode.appStorage.</span>get
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.appStorage.reset">
+            function <span class="apidocSignatureSpan">learnyounode.appStorage.</span>reset
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.appStorage.save">
+            function <span class="apidocSignatureSpan">learnyounode.appStorage.</span>save
+            <span class="apidocSignatureSpan">(name, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">learnyounode.appStorage.</span>dir</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.learnyounode.i18n">module learnyounode.i18n</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.i18n">
+            function <span class="apidocSignatureSpan">learnyounode.</span>i18n
+            <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.__">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>__
+            <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.__n">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>__n
+            <span class="apidocSignatureSpan">(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.abs">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>abs
+            <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.absN">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>absN
+            <span class="apidocSignatureSpan">(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.change">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>change
+            <span class="apidocSignatureSpan">(lng)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.extend">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>extend
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.fallback">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>fallback
+            <span class="apidocSignatureSpan">(key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.get">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>get
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.getAbs">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>getAbs
+            <span class="apidocSignatureSpan">(key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.has">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>has
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.hasAbs">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>hasAbs
+            <span class="apidocSignatureSpan">(key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.lang">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>lang
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.lock">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>lock
+            <span class="apidocSignatureSpan">(lock)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.prefix">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>prefix
+            <span class="apidocSignatureSpan">(prefix, allowModification)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.section">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>section
+            <span class="apidocSignatureSpan">(locale, allowModification)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.translate">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>translate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.translateAbs">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>translateAbs
+            <span class="apidocSignatureSpan">(abs, key, namedValues, args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.translator">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>translator
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.vsprintf">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.</span>vsprintf
+            <span class="apidocSignatureSpan">(fmt, argv)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.i18n.</span>mustache</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.learnyounode.i18n.mustache">module learnyounode.i18n.mustache</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Context">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>Context
+            <span class="apidocSignatureSpan">(view, parentContext)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Scanner">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>Scanner
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Writer">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>Writer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.clearCache">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>clearCache
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.escape">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>escape
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.parse">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>parse
+            <span class="apidocSignatureSpan">(template, tags)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.render">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>render
+            <span class="apidocSignatureSpan">(template, view, partials)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.to_html">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>to_html
+            <span class="apidocSignatureSpan">(template, view, partials, send)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>tags</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.learnyounode.i18n.mustache.Context.prototype">module learnyounode.i18n.mustache.Context.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Context.prototype.lookup">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Context.prototype.</span>lookup
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Context.prototype.push">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Context.prototype.</span>push
+            <span class="apidocSignatureSpan">(view)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.learnyounode.i18n.mustache.Scanner.prototype">module learnyounode.i18n.mustache.Scanner.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Scanner.prototype.eos">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Scanner.prototype.</span>eos
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Scanner.prototype.scan">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Scanner.prototype.</span>scan
+            <span class="apidocSignatureSpan">(re)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Scanner.prototype.scanUntil">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Scanner.prototype.</span>scanUntil
+            <span class="apidocSignatureSpan">(re)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.learnyounode.i18n.mustache.Writer.prototype">module learnyounode.i18n.mustache.Writer.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.clearCache">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>clearCache
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.escapedValue">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>escapedValue
+            <span class="apidocSignatureSpan">(token, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.parse">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>parse
+            <span class="apidocSignatureSpan">(template, tags)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.rawValue">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>rawValue
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.render">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>render
+            <span class="apidocSignatureSpan">(template, view, partials)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderInverted">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>renderInverted
+            <span class="apidocSignatureSpan">(token, context, partials, originalTemplate)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderPartial">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>renderPartial
+            <span class="apidocSignatureSpan">(token, context, partials)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderSection">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>renderSection
+            <span class="apidocSignatureSpan">(token, context, partials, originalTemplate)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderTokens">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>renderTokens
+            <span class="apidocSignatureSpan">(tokens, context, partials, originalTemplate)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.unescapedValue">
+            function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>unescapedValue
+            <span class="apidocSignatureSpan">(token, context)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.learnyounode" id="apidoc.module.learnyounode">module learnyounode</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.__" id="apidoc.element.learnyounode.__">
+        function <span class="apidocSignatureSpan">learnyounode.</span>__
+        <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function __(key, namedValues, a, b, c, d, e, f, g, h, i, j) {
+  if (typeof namedValues === 'object' &amp;&amp; namedValues !== null) {
+    return ___(node, key, namedValues, a, b, c, d, e, f, g, h, i, j)
+  }
+  return ___(node, key, null, namedValues, a, b, c, d, e, f, g, h, i)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.__n" id="apidoc.element.learnyounode.__n">
+        function <span class="apidocSignatureSpan">learnyounode.</span>__n
+        <span class="apidocSignatureSpan">(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function __n(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j) {
+  if (typeof plural !== 'object' &amp;&amp; typeof plural !== 'string') {
+    return ___n(node, singular, singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i)
+  }
+  return ___n(node, singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n" id="apidoc.element.learnyounode.i18n">
+        function <span class="apidocSignatureSpan">learnyounode.</span>i18n
+        <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function __(key, namedValues, a, b, c, d, e, f, g, h, i, j) {
+  if (typeof namedValues === 'object' &amp;&amp; namedValues !== null) {
+    return ___(node, key, namedValues, a, b, c, d, e, f, g, h, i, j)
+  }
+  return ___(node, key, null, namedValues, a, b, c, d, e, f, g, h, i)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.learnyounode.appStorage" id="apidoc.module.learnyounode.appStorage">module learnyounode.appStorage</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.appStorage.get" id="apidoc.element.learnyounode.appStorage.get">
+        function <span class="apidocSignatureSpan">learnyounode.appStorage.</span>get
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function get(name) {
+  var file = fileName(name)
+  try {
+    var fileData = fs.readFileSync(file, 'utf8')
+  } catch (e) {
+    // TODO: write this error in a log
+    return null
+  }
+  try {
+    return JSON.parse(fileData)
+  } catch (e) {
+    // TODO: write this error in a log
+    return null
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.appStorage.reset" id="apidoc.element.learnyounode.appStorage.reset">
+        function <span class="apidocSignatureSpan">learnyounode.appStorage.</span>reset
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function reset() {
+  rimraf.sync(dir)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.appStorage.save" id="apidoc.element.learnyounode.appStorage.save">
+        function <span class="apidocSignatureSpan">learnyounode.appStorage.</span>save
+        <span class="apidocSignatureSpan">(name, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function save(name, data) {
+  mkdirp.sync(dir)
+  try {
+    fs.writeFileSync(fileName(name), JSON.stringify(data, null, 2))
+  } catch (e) {
+    // TODO: write this error in a log
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.learnyounode.i18n" id="apidoc.module.learnyounode.i18n">module learnyounode.i18n</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.i18n" id="apidoc.element.learnyounode.i18n.i18n">
+        function <span class="apidocSignatureSpan">learnyounode.</span>i18n
+        <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function __(key, namedValues, a, b, c, d, e, f, g, h, i, j) {
+  if (typeof namedValues === 'object' &amp;&amp; namedValues !== null) {
+    return ___(node, key, namedValues, a, b, c, d, e, f, g, h, i, j)
+  }
+  return ___(node, key, null, namedValues, a, b, c, d, e, f, g, h, i)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.__" id="apidoc.element.learnyounode.i18n.__">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>__
+        <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function __(key, namedValues, a, b, c, d, e, f, g, h, i, j) {
+  if (typeof namedValues === 'object' &amp;&amp; namedValues !== null) {
+    return ___(node, key, namedValues, a, b, c, d, e, f, g, h, i, j)
+  }
+  return ___(node, key, null, namedValues, a, b, c, d, e, f, g, h, i)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.__n" id="apidoc.element.learnyounode.i18n.__n">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>__n
+        <span class="apidocSignatureSpan">(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function __n(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j) {
+  if (typeof plural !== 'object' &amp;&amp; typeof plural !== 'string') {
+    return ___n(node, singular, singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i)
+  }
+  return ___n(node, singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.abs" id="apidoc.element.learnyounode.i18n.abs">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>abs
+        <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function abs(key, namedValues, a, b, c, d, e, f, g, h, i, j) {
+  if (typeof namedValues === 'object' &amp;&amp; namedValues !== null) {
+    return ___(node.absRoot, key, namedValues, a, b, c, d, e, f, g, h, i, j)
+  }
+  return ___(node.absRoot, key, null, namedValues, a, b, c, d, e, f, g, h, i)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.absN" id="apidoc.element.learnyounode.i18n.absN">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>absN
+        <span class="apidocSignatureSpan">(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function absN(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j) {
+  if (typeof plural !== 'object' &amp;&amp; typeof plural !== 'string') {
+    return ___n(node.absRoot, singular, singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i)
+  }
+  return ___n(node.absRoot, singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.change" id="apidoc.element.learnyounode.i18n.change">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>change
+        <span class="apidocSignatureSpan">(lng)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">change = function (lng) {
+  lang = choose(lng)
+  translator.changeSection(lang)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.extend" id="apidoc.element.learnyounode.i18n.extend">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>extend
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">extend = function (obj) {
+  return i18n(i18nExtend(result, function (key) {
+    return obj[key]
+  }))
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.fallback" id="apidoc.element.learnyounode.i18n.fallback">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>fallback
+        <span class="apidocSignatureSpan">(key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function defaultFallback(key) {
+  if (!key) {
+    return '(?)'
+  }
+  return key
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.get" id="apidoc.element.learnyounode.i18n.get">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>get
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.getAbs" id="apidoc.element.learnyounode.i18n.getAbs">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>getAbs
+        <span class="apidocSignatureSpan">(key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getAbs = function (key) {
+  return node.absRoot.get(key)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.has" id="apidoc.element.learnyounode.i18n.has">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>has
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">has = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.hasAbs" id="apidoc.element.learnyounode.i18n.hasAbs">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>hasAbs
+        <span class="apidocSignatureSpan">(key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hasAbs = function (key) {
+  return node.absRoot.has(key)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.lang" id="apidoc.element.learnyounode.i18n.lang">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>lang
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">lang = function () {
+  return lang
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.lock" id="apidoc.element.learnyounode.i18n.lock">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>lock
+        <span class="apidocSignatureSpan">(lock)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function lock(lock) {
+  var newNode = node.lock(lock)
+  if (newNode === node) {
+    return api
+  }
+  return convertToAPI(newNode)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.prefix" id="apidoc.element.learnyounode.i18n.prefix">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>prefix
+        <span class="apidocSignatureSpan">(prefix, allowModification)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function prefix(prefix, allowModification) {
+  if (allowModification) {
+    return convertToAPI(node.prefix(prefix, allowModification))
+  }
+  var subAPI
+  if (!api.storage) {
+    api.storage = {}
+  } else {
+    subAPI = api.storage[prefix]
+  }
+  if (!subAPI) {
+    subAPI = convertToAPI(node.prefix(prefix, allowModification))
+    api.storage[prefix] = subAPI
+  }
+  return subAPI
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.section" id="apidoc.element.learnyounode.i18n.section">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>section
+        <span class="apidocSignatureSpan">(locale, allowModification)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function section(locale, allowModification) {
+  return api.prefix(locale + '.', allowModification)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.translate" id="apidoc.element.learnyounode.i18n.translate">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>translate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">translate = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.translateAbs" id="apidoc.element.learnyounode.i18n.translateAbs">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>translateAbs
+        <span class="apidocSignatureSpan">(abs, key, namedValues, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">translateAbs = function (abs, key, namedValues, args) {
+  return node.absRoot.translate(abs, key, namedValues, args)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.translator" id="apidoc.element.learnyounode.i18n.translator">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>translator
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">translator = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.vsprintf" id="apidoc.element.learnyounode.i18n.vsprintf">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.</span>vsprintf
+        <span class="apidocSignatureSpan">(fmt, argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">vsprintf = function (fmt, argv) {
+	var argvClone = argv.slice();
+	argvClone.unshift(fmt);
+	return sprintf.apply(null, argvClone);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.learnyounode.i18n.mustache" id="apidoc.module.learnyounode.i18n.mustache">module learnyounode.i18n.mustache</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Context" id="apidoc.element.learnyounode.i18n.mustache.Context">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>Context
+        <span class="apidocSignatureSpan">(view, parentContext)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Context(view, parentContext) {
+  this.view = view;
+  this.cache = { '.': this.view };
+  this.parent = parentContext;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Scanner" id="apidoc.element.learnyounode.i18n.mustache.Scanner">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>Scanner
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Scanner(string) {
+  this.string = string;
+  this.tail = string;
+  this.pos = 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Writer" id="apidoc.element.learnyounode.i18n.mustache.Writer">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>Writer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Writer() {
+  this.cache = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.clearCache" id="apidoc.element.learnyounode.i18n.mustache.clearCache">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>clearCache
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clearCache() {
+  return defaultWriter.clearCache();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.escape" id="apidoc.element.learnyounode.i18n.mustache.escape">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>escape
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function escapeHtml(string) {
+  return String(string).replace(/[&amp;&lt;&gt;"'`=\/]/g, function fromEntityMap (s) {
+    return entityMap[s];
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.parse" id="apidoc.element.learnyounode.i18n.mustache.parse">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>parse
+        <span class="apidocSignatureSpan">(template, tags)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parse(template, tags) {
+  return defaultWriter.parse(template, tags);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.render" id="apidoc.element.learnyounode.i18n.mustache.render">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>render
+        <span class="apidocSignatureSpan">(template, view, partials)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render(template, view, partials) {
+  if (typeof template !== 'string') {
+    throw new TypeError('Invalid template! Template should be a "string" ' +
+                        'but "' + typeStr(template) + '" was given as the first ' +
+                        'argument for mustache#render(template, view, partials)');
+  }
+
+  return defaultWriter.render(template, view, partials);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.to_html" id="apidoc.element.learnyounode.i18n.mustache.to_html">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.</span>to_html
+        <span class="apidocSignatureSpan">(template, view, partials, send)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function to_html(template, view, partials, send) {
+<span class="apidocCodeCommentSpan">  /*eslint-enable*/
+</span>
+  var result = mustache.render(template, view, partials);
+
+  if (isFunction(send)) {
+    send(result);
+  } else {
+    return result;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.learnyounode.i18n.mustache.Context.prototype" id="apidoc.module.learnyounode.i18n.mustache.Context.prototype">module learnyounode.i18n.mustache.Context.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Context.prototype.lookup" id="apidoc.element.learnyounode.i18n.mustache.Context.prototype.lookup">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Context.prototype.</span>lookup
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function lookup(name) {
+  var cache = this.cache;
+
+  var value;
+  if (cache.hasOwnProperty(name)) {
+    value = cache[name];
+  } else {
+    var context = this, names, index, lookupHit = false;
+
+    while (context) {
+      if (name.indexOf('.') &gt; 0) {
+        value = context.view;
+        names = name.split('.');
+        index = 0;
+
+<span class="apidocCodeCommentSpan">        /**
+         * Using the dot notion path in `name`, we descend through the
+         * nested objects.
+         *
+         * To be certain that the lookup has been successful, we have to
+         * check if the last object in the path actually has the property
+         * we are looking for. We store the result in `lookupHit`.
+         *
+         * This is specially necessary for when the value has been set to
+         * `undefined` and we want to avoid looking up parent contexts.
+         **/
+</span>        while (value != null &amp;&amp; index &lt; names.length) {
+          if (index === names.length - 1)
+            lookupHit = hasProperty(value, names[index]);
+
+          value = value[names[index++]];
+        }
+      } else {
+        value = context.view[name];
+        lookupHit = hasProperty(context.view, name);
+      }
+
+      if (lookupHit)
+        break;
+
+      context = context.parent;
+    }
+
+    cache[name] = value;
+  }
+
+  if (isFunction(value))
+    value = value.call(this.view);
+
+  return value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Context.prototype.push" id="apidoc.element.learnyounode.i18n.mustache.Context.prototype.push">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Context.prototype.</span>push
+        <span class="apidocSignatureSpan">(view)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function push(view) {
+  return new Context(view, this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.learnyounode.i18n.mustache.Scanner.prototype" id="apidoc.module.learnyounode.i18n.mustache.Scanner.prototype">module learnyounode.i18n.mustache.Scanner.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Scanner.prototype.eos" id="apidoc.element.learnyounode.i18n.mustache.Scanner.prototype.eos">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Scanner.prototype.</span>eos
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function eos() {
+  return this.tail === '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Scanner.prototype.scan" id="apidoc.element.learnyounode.i18n.mustache.Scanner.prototype.scan">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Scanner.prototype.</span>scan
+        <span class="apidocSignatureSpan">(re)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function scan(re) {
+  var match = this.tail.match(re);
+
+  if (!match || match.index !== 0)
+    return '';
+
+  var string = match[0];
+
+  this.tail = this.tail.substring(string.length);
+  this.pos += string.length;
+
+  return string;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Scanner.prototype.scanUntil" id="apidoc.element.learnyounode.i18n.mustache.Scanner.prototype.scanUntil">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Scanner.prototype.</span>scanUntil
+        <span class="apidocSignatureSpan">(re)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function scanUntil(re) {
+  var index = this.tail.search(re), match;
+
+  switch (index) {
+    case -1:
+      match = this.tail;
+      this.tail = '';
+      break;
+    case 0:
+      match = '';
+      break;
+    default:
+      match = this.tail.substring(0, index);
+      this.tail = this.tail.substring(index);
+  }
+
+  this.pos += match.length;
+
+  return match;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.learnyounode.i18n.mustache.Writer.prototype" id="apidoc.module.learnyounode.i18n.mustache.Writer.prototype">module learnyounode.i18n.mustache.Writer.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.clearCache" id="apidoc.element.learnyounode.i18n.mustache.Writer.prototype.clearCache">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>clearCache
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clearCache() {
+  this.cache = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.escapedValue" id="apidoc.element.learnyounode.i18n.mustache.Writer.prototype.escapedValue">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>escapedValue
+        <span class="apidocSignatureSpan">(token, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function escapedValue(token, context) {
+  var value = context.lookup(token[1]);
+  if (value != null)
+    return mustache.escape(value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.parse" id="apidoc.element.learnyounode.i18n.mustache.Writer.prototype.parse">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>parse
+        <span class="apidocSignatureSpan">(template, tags)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parse(template, tags) {
+  var cache = this.cache;
+  var tokens = cache[template];
+
+  if (tokens == null)
+    tokens = cache[template] = parseTemplate(template, tags);
+
+  return tokens;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.rawValue" id="apidoc.element.learnyounode.i18n.mustache.Writer.prototype.rawValue">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>rawValue
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function rawValue(token) {
+  return token[1];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.render" id="apidoc.element.learnyounode.i18n.mustache.Writer.prototype.render">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>render
+        <span class="apidocSignatureSpan">(template, view, partials)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render(template, view, partials) {
+  var tokens = this.parse(template);
+  var context = (view instanceof Context) ? view : new Context(view);
+  return this.renderTokens(tokens, context, partials, template);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderInverted" id="apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderInverted">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>renderInverted
+        <span class="apidocSignatureSpan">(token, context, partials, originalTemplate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderInverted(token, context, partials, originalTemplate) {
+  var value = context.lookup(token[1]);
+
+  // Use JavaScript's definition of falsy. Include empty arrays.
+  // See https://github.com/janl/mustache.js/issues/186
+  if (!value || (isArray(value) &amp;&amp; value.length === 0))
+    return this.renderTokens(token[4], context, partials, originalTemplate);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderPartial" id="apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderPartial">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>renderPartial
+        <span class="apidocSignatureSpan">(token, context, partials)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderPartial(token, context, partials) {
+  if (!partials) return;
+
+  var value = isFunction(partials) ? partials(token[1]) : partials[token[1]];
+  if (value != null)
+    return this.renderTokens(this.parse(value), context, partials, value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderSection" id="apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderSection">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>renderSection
+        <span class="apidocSignatureSpan">(token, context, partials, originalTemplate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderSection(token, context, partials, originalTemplate) {
+  var self = this;
+  var buffer = '';
+  var value = context.lookup(token[1]);
+
+  // This function is used to render an arbitrary template
+  // in the current context by higher-order sections.
+  function subRender (template) {
+    return self.render(template, context, partials);
+  }
+
+  if (!value) return;
+
+  if (isArray(value)) {
+    for (var j = 0, valueLength = value.length; j &lt; valueLength; ++j) {
+      buffer += this.renderTokens(token[4], context.push(value[j]), partials, originalTemplate);
+    }
+  } else if (typeof value === 'object' || typeof value === 'string' || typeof value === 'number') {
+    buffer += this.renderTokens(token[4], context.push(value), partials, originalTemplate);
+  } else if (isFunction(value)) {
+    if (typeof originalTemplate !== 'string')
+      throw new Error('Cannot use higher-order sections without the original template');
+
+    // Extract the portion of the original template that the section contains.
+    value = value.call(context.view, originalTemplate.slice(token[3], token[5]), subRender);
+
+    if (value != null)
+      buffer += value;
+  } else {
+    buffer += this.renderTokens(token[4], context, partials, originalTemplate);
+  }
+  return buffer;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderTokens" id="apidoc.element.learnyounode.i18n.mustache.Writer.prototype.renderTokens">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>renderTokens
+        <span class="apidocSignatureSpan">(tokens, context, partials, originalTemplate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderTokens(tokens, context, partials, originalTemplate) {
+  var buffer = '';
+
+  var token, symbol, value;
+  for (var i = 0, numTokens = tokens.length; i &lt; numTokens; ++i) {
+    value = undefined;
+    token = tokens[i];
+    symbol = token[0];
+
+    if (symbol === '#') value = this.renderSection(token, context, partials, originalTemplate);
+    else if (symbol === '^') value = this.renderInverted(token, context, partials, originalTemplate);
+    else if (symbol === '&gt;') value = this.renderPartial(token, context, partials, originalTemplate);
+    else if (symbol === '&amp;') value = this.unescapedValue(token, context);
+    else if (symbol === 'name') value = this.escapedValue(token, context);
+    else if (symbol === 'text') value = this.rawValue(token);
+
+    if (value !== undefined)
+      buffer += value;
+  }
+
+  return buffer;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.i18n.mustache.Writer.prototype.unescapedValue" id="apidoc.element.learnyounode.i18n.mustache.Writer.prototype.unescapedValue">
+        function <span class="apidocSignatureSpan">learnyounode.i18n.mustache.Writer.prototype.</span>unescapedValue
+        <span class="apidocSignatureSpan">(token, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function unescapedValue(token, context) {
+  var value = context.lookup(token[1]);
+  if (value != null)
+    return value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
