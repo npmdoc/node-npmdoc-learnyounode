@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"learnyounode",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "learnyounode",
+    "description": "api documentation for [learnyounode (v3.5.10)](https://github.com/workshopper/learnyounode#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-learnyounode.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-learnyounode) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-learnyounode.svg)](https://travis-ci.org/npmdoc/node-npmdoc-learnyounode)",
     "devDependencies": {
-        "learnyounode": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "learnyounode": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-learnyounode",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-learnyounode",
+    "keywords": [
+        "documentation",
+        "learnyounode"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_learnyounode.js",
+    "name": "npmdoc-learnyounode",
+    "nameAlias": "npmdoc_learnyounode",
+    "nameOriginal": "npmdoc-learnyounode",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-learnyounode.git"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
