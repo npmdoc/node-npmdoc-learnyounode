@@ -96,6 +96,12 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan"></span>learnyounode</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.</span>_events</span>
 
         </li>
@@ -630,6 +636,85 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.learnyounode.learnyounode">module learnyounode.learnyounode</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.learnyounode.__">
+            function <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>__
+            <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.learnyounode.__n">
+            function <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>__n
+            <span class="apidocSignatureSpan">(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.learnyounode.learnyounode.i18n">
+            function <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>i18n
+            <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>_eventsCount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>_events</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>_meta</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>appStorage</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>cli</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>domain</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>exercises</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>options</span>
+
+        </li>
+
+    </ol></li>
+
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -687,6 +772,8 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
 
 
 
@@ -1655,6 +1742,81 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.learnyounode.learnyounode" id="apidoc.module.learnyounode.learnyounode">module learnyounode.learnyounode</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.learnyounode.__" id="apidoc.element.learnyounode.learnyounode.__">
+        function <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>__
+        <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function __(key, namedValues, a, b, c, d, e, f, g, h, i, j) {
+  if (typeof namedValues === &#x27;object&#x27; &#x26;&#x26; namedValues !== null) {
+    return ___(node, key, namedValues, a, b, c, d, e, f, g, h, i, j)
+  }
+  return ___(node, key, null, namedValues, a, b, c, d, e, f, g, h, i)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.learnyounode.__n" id="apidoc.element.learnyounode.learnyounode.__n">
+        function <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>__n
+        <span class="apidocSignatureSpan">(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function __n(singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j) {
+  if (typeof plural !== &#x27;object&#x27; &#x26;&#x26; typeof plural !== &#x27;string&#x27;) {
+    return ___n(node, singular, singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i)
+  }
+  return ___n(node, singular, plural, count, namedValues, a, b, c, d, e, f, g, h, i, j)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.learnyounode.learnyounode.i18n" id="apidoc.element.learnyounode.learnyounode.i18n">
+        function <span class="apidocSignatureSpan">learnyounode.learnyounode.</span>i18n
+        <span class="apidocSignatureSpan">(key, namedValues, a, b, c, d, e, f, g, h, i, j)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function __(key, namedValues, a, b, c, d, e, f, g, h, i, j) {
+  if (typeof namedValues === &#x27;object&#x27; &#x26;&#x26; namedValues !== null) {
+    return ___(node, key, namedValues, a, b, c, d, e, f, g, h, i, j)
+  }
+  return ___(node, key, null, namedValues, a, b, c, d, e, f, g, h, i)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </div>
